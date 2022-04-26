@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace App\Ebcms\Theme;
 
-use DigPHP\Psr11\Container;
-use DigPHP\Template\Template;
-use Ebcms\Framework\AppInterface;
-use Ebcms\Framework\Config;
-use Ebcms\Framework\Framework;
+use DiggPHP\Psr11\Container;
+use DiggPHP\Template\Template;
+use DiggPHP\Framework\AppInterface;
+use DiggPHP\Framework\Config;
+use DiggPHP\Framework\Framework;
 
 class App implements AppInterface
 {

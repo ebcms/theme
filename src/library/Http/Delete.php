@@ -6,8 +6,8 @@ namespace App\Ebcms\Theme\Http;
 
 use App\Ebcms\Admin\Http\Common;
 use App\Ebcms\Theme\Traits\DirTrait;
-use DigPHP\Request\Request;
-use Ebcms\Framework\Framework;
+use DiggPHP\Request\Request;
+use DiggPHP\Framework\Framework;
 
 class Delete extends Common
 {

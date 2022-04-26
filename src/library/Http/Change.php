@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace App\Ebcms\Theme\Http;
 
 use App\Ebcms\Admin\Http\Common;
-use DigPHP\Request\Request;
-use Ebcms\Framework\Config;
-use Ebcms\Framework\Framework;
+use DiggPHP\Request\Request;
+use DiggPHP\Framework\Config;
+use DiggPHP\Framework\Framework;
 
 class Change extends Common
 {
