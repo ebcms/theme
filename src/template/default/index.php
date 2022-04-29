@@ -47,7 +47,12 @@
 <div class="container">
     <div class="my-4">
         <div class="h1">主题管理</div>
-        <div class="text-muted fw-light">主题位于 <code>/theme</code> 目录</div>
+        <div class="text-muted fw-light">
+            <span>主题位于 <code>/theme</code> 目录</span>
+            {if in_array('ebcms/tstore', $framework->getAppList())}
+            <span>，您可以通过<a href="{echo $router->build('/ebcms/tstore/index')}" class="mx-1 fw-bold">主题市场</a>在线安装主题~</span>
+            {/if}
+        </div>
     </div>
     <div class="d-flex flex-column gap-4">
         {foreach $themes as $theme}
