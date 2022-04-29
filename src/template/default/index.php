@@ -50,8 +50,9 @@
         <div class="text-muted fw-light">
             <span>主题位于 <code>/theme</code> 目录</span>
             {if in_array('ebcms/tstore', $framework->getAppList())}
-            <span>，您可以通过<a href="{echo $router->build('/ebcms/tstore/index')}" class="mx-1 fw-bold">主题市场</a>在线安装主题~</span>
+            <span>，您可以通过<a href="{echo $router->build('/ebcms/tstore/index')}" class="mx-1 fw-bold">主题市场</a>在线安装主题</span>
             {/if}
+            <span>，开发者请阅读<a href="https://link.ebcms.com/2TEEYtgm" target="_blank" class="mx-1 fw-bold">主题开发文档</a></span>
         </div>
     </div>
     <div class="d-flex flex-column gap-4">
