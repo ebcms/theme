@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Ebcms\Theme\Http;
 
-use App\Ebcms\Admin\Http\Common;
+use App\Psrphp\Admin\Http\Common;
 use App\Ebcms\Theme\Model\Server;
 use PsrPHP\Request\Request;
 use PsrPHP\Template\Template;

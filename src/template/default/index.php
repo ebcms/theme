@@ -1,4 +1,4 @@
-{include common/header@ebcms/admin}
+{include common/header@psrphp/admin}
 <script>
     function search(params) {
         document.getElementById('search').value = params.q;
@@ -61,4 +61,4 @@
     <div id="items" class="d-flex flex-column gap-4">
     </div>
 </div>
-{include common/footer@ebcms/admin}
+{include common/footer@psrphp/admin}
