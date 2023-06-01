@@ -2,6 +2,7 @@
     "name": "ebcms/theme",
     "description": "主题商店",
     "license": "GPL-3.0",
+    "type": "psrapp",
     "require": {
         "psrphp/theme": "^1.0"
     },
