@@ -6,12 +6,12 @@ namespace App\Ebcms\Theme\Http;
 
 use App\Psrphp\Admin\Http\Common;
 use App\Ebcms\Theme\Model\Server;
+use App\Psrphp\Admin\Lib\Response;
 use Composer\Autoload\ClassLoader;
 use PsrPHP\Psr16\LocalAdapter;
 use PsrPHP\Request\Request;
 use PsrPHP\Router\Router;
 use PsrPHP\Session\Session;
-use PsrPHP\Framework\Framework;
 use ReflectionClass;
 use Throwable;
 
@@ -43,16 +43,16 @@ class Source extends Common
 
             $res = $server->query('/source', $param);
             if ($res['errcode']) {
-                return $this->error($res['message'], $res['redirect_url'] ?? '', $res['errcode']);
+                return Response::error($res['message'], $res['redirect_url'] ?? '', $res['errcode']);
             }
             if (null === $item = $cache->get($token)) {
-                return $this->error('超时，请重新操作~');
+                return Response::error('超时，请重新操作~');
             }
             $item['item_path'] = $root . '/theme/' . $name;
             $session->set('item', $item);
-            return $this->success($res['message']);
+            return Response::success($res['message']);
         } catch (Throwable $th) {
-            return $this->error($th->getMessage());
+            return Response::error($th->getMessage());
         }
     }
 }
