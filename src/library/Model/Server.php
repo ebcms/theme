@@ -6,11 +6,9 @@ namespace App\Ebcms\Theme\Model;
 
 use Composer\InstalledVersions;
 use PsrPHP\Router\Router;
-use PsrPHP\Framework\AppInterface;
 use PsrPHP\Framework\Config;
 use PsrPHP\Framework\Framework;
 use Exception;
-use ReflectionClass;
 use Throwable;
 
 class Server
