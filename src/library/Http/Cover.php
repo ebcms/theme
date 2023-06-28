@@ -15,12 +15,11 @@ use ZipArchive;
 class Cover extends Common
 {
     public function get(
-        Session $session,
-        Dir $dir
+        Session $session
     ) {
         try {
             $item = $session->get('item');
-            $dir->del($item['item_path']);
+            Dir::del($item['item_path']);
             $this->unZip($item['tmpfile'], $item['item_path']);
             return Response::success('文件更新成功!');
         } catch (Throwable $th) {
